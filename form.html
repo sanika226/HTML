@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    label{
+        color: hsl(78, 83%, 47%);
+    }
+    
+    form{
+        width: 50%;
+        line-height:1.5cm;
+    }
+    legend{
+        margin-left: 0px;
+        text-align: center;
+    }
+    fieldset{
+        width: 50%;
+        margin-left: auto;
+    }
+    body{
+        background-image:url(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg );
+        background-repeat: no-repeat;
+        background-size: cover;
+    }   
+    
+</style>
+<body>
+    <form>
+
+         <fieldset>
+    
+        <legend>student registrtion form</legend>
+
+        
+        <label for="Name">Name:</label>&nbsp;&nbsp;&nbsp;
+        <input type="text"placeholder ="Name" required><br>
+
+        <label for="age">Age:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="Age"placeholder="Age" required><br>
+         <label for="langaude">language:</label>
+        <input type="checkbox">
+        <label for="">english</label>
+        <input type="checkbox">
+        <label for="marathi">Marathi</label>
+        <input type="checkbox">
+        <label for="hindi">hindi</label><br>
+        
+        <label for="Roll no">Roll no:</label>&nbsp;&nbsp;&nbsp;
+        <input type="Roll No"placeholder="Roll no"><br>
+
+        <label for="gender">gender:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="gender">
+        
+        <label for="">male</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="gender">
+        <label for="">female</label><br>
+
+        <label for="Branch">Branch:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="Branch"placeholder="Branch"><br>
+
+        <label for="Email id">Email id:</label>&nbsp;&nbsp;&nbsp; 
+        <input type="Email id" placeholder="Email id"required><br>
+
+        <label for="Mobile no">Mobile no:</label>
+        <input type="Mobile no"placeholder="mobile no"required><br>
+
+        <label for="College name">College name:</label>
+        <input type="College name"placeholder="collegename"><br>
+
+        
+        <label type="total marks">Total marks:</label>
+        <input type=" totalmarks" disabled value="100"><br>
+
+        <label for="obtained marks">Obtained marks:</label>
+        <input type="text"><br>
+
+        <label for="percentage">percentage:</label>
+        <input type="text" required><br>
+
+
+        <label for="file">Marksheet:</label>
+        <input type="file"><br>
+        <label for="file">photo</label>
+        <input type="file"required><br>
+
+        <label for="date">Birth date:</label>
+        <input type="date"><br>
+        <label for="city">city:</label>     
+           <input type="search"><br>
+           <select>
+               <optgroup label="select course"> 
+                <option value="">java</option>   
+                <option value="">python</option> 
+                <option value="">c++</option>
+                <option value="">c</option><br>
+               </optgroup>
+               
+           </select>
+
+        <input type="submit"id="submit"> 
+        <label for=""></label>
+        <input type="button" value="cancel" size=""><br>
+
+        
+        
+    </fieldset>
+    </form>
+</body>
+</html>

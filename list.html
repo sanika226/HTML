@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     var addItem=document.getElementById('btn')
+     
+       addItem.addEventListener('click',function()
+       {add()})  
+       console.log("second item")
+       function add() {
+           
+       }
+       count++
+    //    var deleteItem=document.getElementById('btn2')
+    //    deleteItem.deleteEventListener('click',function()
+
+    //    {delete()})
+
+    //    console.log("delete item")
+    //    function delete(){
+
+    //    }
+       var inputvalue=document.getElementById('enter-item').value
+       var list=document.createElement('ul')
+       var listItem=document.createElement('li')
+       var btn=document.createElement('button')
+    //    btn.innerHTML="delete"
+
+       listItem.innerHTML=inputvalue
+       list.append(listItem)
+       document.body.append(list)
+       document.getElementById('enter-item').value;
+    //    var.inputvalue=document.getElementById('delete-item')
+    //    list.append(deleteItem)
+    //    document.getElementById('delete-item')
+
+
+
+    
+       
+       
+       
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .flip-card{
+            background-color: transparent;
+            height:300px;
+            width: 300px;
+            perspective: 1000px;
+
+        }
+        .flip-card-inner{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transform-style: preserve-3d;
+            transition:transform 0.6s;
+            box-shadow: 0 4px 8px 0rgb(0,0,0,0.2);
+
+        }
+        .flip-card: hover  .flip-card-inner  {
+            transform: rotateY(180deg);
+        }  
+        .flip-card-front,  .flip-card-back{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            
+                    }
+        
+        
+           .flip-card-front{
+            background-color:rgb(128, 4, 4);
+            color:black;
+        }
+
+            .flip-card-back{
+            background-color: tomato;
+            color: white;
+            transform:rotateY(180deg);
+
+        }
+        /* img{
+            height: 300px;
+            width: 300px;
+        } */
+        </style>
+</head>
+<body>
+
+    <!-- <h1>card flip with text</h1>
+    <h3>hover over the image below:</h3> -->
+    <div class="flipcard">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="https://cdn.havecamerawilltravel.com/photographer/files/2020/01/youtube-logo-new-1068x510.jpg" alt="youtube"
+                style="width:300px;height:300px;">
+            </div>
+                <div class="flip-card-back">
+                    <h1>Youtube</h1>
+                    <p>Music</p>
+                    <p>Video</p>
+                </div>
+            </div>
+        
+
+    </div>
+    
+</body>
+</html>
