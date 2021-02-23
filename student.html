@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="stuentid" type="text" placeholder="studentid"><br><br>
+    <input id="collegeid" type="text" placeholder="collegeid"><br><br>
+    <input id="complete" type="checkbox" value="completed">
+    <label for="complete">completed</label><br><br>
+    <button type="button" onclick="displayData()">submit</button>
+
+
+    <script>
+        function displayData(){
+            let studentid=document.getElementById("studentid").value
+            let collegeid=document.getElementById("collegeid").value 
+             let completed
+             if(document.getElementById("complete").checked)
+
+            {
+                completed=document.getElementById("complete").value
+            }else{
+                 completed=document.getElementById("complete").value="not completed"
+            
+        }
+        console.log("studentid:"+studentid)
+        console.log("collegeid:"+collegeid)
+
+    }
+    </script>
+    
+</body>
+</html>
